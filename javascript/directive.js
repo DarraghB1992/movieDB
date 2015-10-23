@@ -6,4 +6,14 @@ angular.module('movieDBDirectives',[]).directive('movieInfoBox', function() {
     },
     templateUrl: 'templates/directives/movie-info-box.html'
   };
+})
+
+.directive("movieNav",function(){
+	return{
+		restrict:"E", 
+		scope:{
+			
+		},
+		templateUrl:"templates/directives/movieNav.html"
+	};
 });

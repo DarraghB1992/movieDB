@@ -3,14 +3,27 @@
   "private": false,
   "version": "1.0.0",
   "description": "A tutorial using the movies db api",
-  "repository": "https://github.com/lillylangtree/mdb-nav.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lillylangtree/mdb-nav.git"
+  },
   "license": "MIT",
-  "devDependencies": { 
+  "devDependencies": {
     "http-server": "^0.6.1",
     "shelljs": "^0.2.6"
   },
   "scripts": {
     "prestart": "npm install",
-    "start": "http-server -a localhost -p 8000 -c-1"
-  }
+    "start": "http-server -a localhost -p 7000 -c-1"
+  },
+  "bugs": {
+    "url": "https://github.com/lillylangtree/mdb-nav/issues"
+  },
+  "homepage": "https://github.com/lillylangtree/mdb-nav#readme",
+  "main": "index.js",
+  "dependencies": {
+    "shelljs": "^0.2.6",
+    "http-server": "^0.6.1"
+  },
+  "author": "Darragh B"
 }

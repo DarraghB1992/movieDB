@@ -9,6 +9,10 @@ angular.module('moviesDBApp', ['ngRoute','movieDBControllers','movieDBDirectives
        // $locationProvider.html5Mode(true);
 
 		$routeProvider
+		   .when("/home", {
+			templateUrl: "templates/home.html",
+			controller: "HomeController"
+		  })
 		  .when('/popular', {
 		  	templateUrl: 'templates/movies.html',
 		  	controller: 'MovieListController'
@@ -25,5 +29,13 @@ angular.module('moviesDBApp', ['ngRoute','movieDBControllers','movieDBDirectives
 			templateUrl: "templates/movies.html",
 			controller: "MovieNowPlayingController"
 		})
-		  .otherwise({redirectTo: '/popular'}); 
+		  .when("/movie/:movieId", {
+			templateUrl:"templates/movieDetails.html",
+			controller:'MovieDetailsController'
+		})
+		  .when("/error/:message/:status", {
+			templateUrl:"templates/error.html",
+			controller:'MovieErrorController'
+		})
+		  .otherwise({redirectTo: "/home"}); 
 	});

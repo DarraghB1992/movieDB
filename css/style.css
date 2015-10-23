@@ -1,0 +1,6 @@
+div.repeat:nth-child(6n+0):after{
+	display: table;
+	content: " ";
+	clear: both
+
+}
