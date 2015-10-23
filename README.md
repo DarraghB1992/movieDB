@@ -18,7 +18,7 @@ cd to mdb-nav folder, the git clone creates this folder for you
 
 1/ issue command npm start
 
-2/ in a browser navigate to localhost:8000 (you can change the port setting
+2/ in a browser navigate to localhost:7000 (you can change the port setting
    in the package.json file if you wish)
 
 3/ Home page should appear
